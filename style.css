@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:linear-gradient(#FFC0CB ,#C71585 );
+}
+
+#clock-1 h2{
+    position: relative;
+    display: block;
+    color:#000;
+    text-align: center;
+    margin: 10px 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0 4rem;
+    font-size: 2rem;
+    padding:30px;
+
+
+}
+
+#clock-1 #time{
+    display: flex;
+}
+
+#clock-1 #time div{
+    position: relative;
+    margin: 0 5px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,#0004);
+}
+
+#clock-1 #time div span{
+    position: relative;
+    display: block;
+    width: 100px;
+    height: 80px;
+    background:#ADD8E6;
+    
+    color:#000;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    box-shadow: 0 0 0 1px rgba(0,0,.2);
+}
+
+#clock-1 #time div span:nth-child(2){
+    height: 30px;
+    font-size: 0.8em;
+    letter-spacing: 0.2em;
+    font-weight: 500;
+    z-index: 9;
+    box-shadow: none;
+    text-transform: uppercase;
+}
+#clock-1 #time div:last-child span:nth-child(2){
+    background:#FFB6C1 ;
+}
+#clock-1 #time div:first-child span:nth-child(2){
+    background: #ff0062;
+    
+}
+#clock-1 #time div:nth-of-type(2) span:nth-child(2){
+    background:  #ADFF2F ;
+}
